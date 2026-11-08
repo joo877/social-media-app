@@ -1,59 +1,83 @@
-# SocialMediaApp
+# Social Media App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+An ongoing, full-featured social media application built with **Angular 20**. The project aims to provide a modern and interactive social networking experience, with a focus on modular architecture, reusable components, and scalable frontend development.
 
-## Development server
+<sub>🚧 **Project Status: Work in Progress** – Currently under active development. Features and functionality are being implemented and improved incrementally.</sub>
 
-To start a local development server, run:
+## 🛠️ Technologies Used
+
+- **Angular 20** – Frontend framework.
+- **TypeScript** – Application logic and type safety.
+- **Tailwind CSS 4** – Utility-first styling.
+- **Flowbite** – UI components.
+- **RxJS** – Reactive programming.
+- **Angular Router** – Application navigation.
+- **Angular HttpClient** – HTTP communication.
+- **Font Awesome 7** – Icons.
+
+## 🏗️ Development Focus
+
+- Modular and maintainable application structure.
+- Reusable UI components.
+- Separation of application responsibilities.
+- Centralized HTTP configuration using interceptors.
+- Scalable routing and navigation.
+- Responsive user interface development.
+
+## 🔮 Planned Features
+
+The following features are planned for future development:
+
+- **User Authentication:** Registration, login, logout, and password recovery.
+- **User Profiles:** Personal profiles with profile pictures, cover photos, and editable user information.
+- **Posts Management:** Create, edit, delete, and share posts with text and media attachments.
+- **Social Interactions:** Like, comment, and interact with posts.
+- **Follow System:** Follow and unfollow users.
+- **News Feed:** Dynamic feed displaying posts from followed users.
+- **Real-Time Notifications:** Instant updates for likes, comments, and new followers.
+- **Private Messaging:** One-to-one conversations between users.
+- **Search Functionality:** Search for users and discover content.
+- **Responsive Experience:** Improved layouts and interactions across different devices.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
 
 ```bash
-ng serve
+git clone https://github.com/joo877/social-media-app.git
+cd social-media-app
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Run Development Server
 
 ```bash
-ng generate component component-name
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Navigate to:
+
+```text
+http://localhost:4200/
+```
+
+### Production Build
 
 ```bash
-ng generate --help
+npm run build
 ```
 
-## Building
+## 🚧 Project Status
 
-To build the project run:
+This project is currently under active development. The existing implementation is being expanded, and the planned features will be introduced incrementally.
 
-```bash
-ng build
-```
+## 👨‍💻 Author
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+**Youssef Said**
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+GitHub: [@joo877](https://github.com/joo877)
