@@ -1,0 +1,74 @@
+<nav
+  class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default"
+>
+  <div
+    class="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4"
+  >
+    <a class="flex items-center space-x-3 rtl:space-x-reverse">
+      <span
+        class="self-center text-3xl text-blue-600 font-semibold whitespace-nowrap"
+        >Linked Posts
+      </span>
+    </a>
+    <div
+      class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+    >
+      <button
+        type="button"
+        class="flex text-sm bg-neutral-primary rounded-full md:me-0 focus:ring-4 focus:ring-neutral-tertiary"
+        id="user-menu-button"
+        aria-expanded="false"
+        data-dropdown-toggle="user-dropdown"
+        data-dropdown-placement="bottom"
+      >
+        <span class="sr-only">Open user menu</span>
+        <img
+          class="w-8 h-8 rounded-full cursor-pointer"
+          src="/images/profile.png"
+          alt="user photo"
+        />
+      </button>
+      <!-- Dropdown menu -->
+      <div
+        class="z-50 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44"
+        id="user-dropdown"
+      >
+        <div class="px-4 py-3 text-sm border-b border-default">
+          <span class="block text-heading font-medium">userName</span>
+          <span class="block text-body truncate">Email</span>
+        </div>
+        <ul
+          class="p-2 text-sm text-body font-medium"
+          aria-labelledby="user-menu-button"
+        >
+          <li>
+            <a
+              class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded"
+              >timeline</a
+            >
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded"
+              >profile</a
+            >
+          </li>
+          <li>
+            <a
+              class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded"
+            >
+              sign out</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/changepassword"
+              class="inline-flex items-center cursor-pointer w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded"
+              >change password</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

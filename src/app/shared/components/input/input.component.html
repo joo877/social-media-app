@@ -1,0 +1,49 @@
+<div class="mb-6">
+  @if (flag()) {
+
+  <label
+    [for]="inputid()"
+    class="block mb-2.5 text-sm font-medium text-heading"
+  >
+    {{ inputlabel() }}</label
+  >
+
+  }
+
+  <input
+    [formControl]="control()"
+    [type]="inputtype()"
+    [id]="inputid()"
+    class="bg-neutral-secondary-medium border outline-none w-full my-3 border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block px-3 py-2.5 shadow-xs placeholder:text-body"
+    placeholder=" {{ inputplaceholder() }} "
+    required
+  />
+
+  @if (control().errors && control().touched) {
+
+  <div
+    class="flex p-4 mb-4 text-sm text-fg-danger-strong rounded-base bg-danger-soft border border-danger-subtle"
+    role="alert"
+  >
+    <div>
+      <ul class="mt-2 list-disc list-outside space-y-1 ps-2.5">
+        @if ( control()?.hasError('required')) {
+        <li>must be required</li>
+        } @if ( control()?.hasError('email')) {
+        <li>please enter the valid Email</li>
+        } @if ( control()?.hasError('pattern')) {
+        <li>
+          Password must start uppercase character and contain lowercase, number,
+          and special character (min 8 chars)
+        </li>
+        } @if ( control()?.hasError('notMatch')) {
+        <li>not match the password</li>
+        } @if ( control()?.hasError('samepassword')) {
+        <li>cannot New password the same Old password</li>
+        }
+      </ul>
+    </div>
+  </div>
+
+  }
+</div>
